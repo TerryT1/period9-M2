@@ -12,7 +12,7 @@ public class Main{
       }
       }
         for (int x = 0; x < counter.length(); x++){
-           if (counter.substring(x, x + 1).equals(".") || counter.substring(x, x + 1).equals("?") || counter.substring(x, x + 1).equals("!")){
+           if (counter.substring(x, x + 1).equals(". ") || counter.substring(x, x + 1).equals("? ") || counter.substring(x, x + 1).equals("! ")){
              sentences++;
       }
   }
