@@ -2,14 +2,22 @@ import java.util.Scanner;
 public class Main{
   public static void main(String[] args){
     int words = 1;
+    int sentences = 0;
     Scanner scanner = new Scanner(System.in);
     System.out.println("Enter your sentences: ");
-    String sentences = scanner.nextLine();
-      for (int i = 0; i < sentences.length(); i++){
-        if (sentences.substring(i, i + 1).equals(" ")){
+    String counter = scanner.nextLine();
+      for (int i = 0; i < counter.length(); i++){
+        if (counter.substring(i, i + 1).equals(" ")){
           words++;
       }
+      }
+        for (int x = 0; x < counter.length(); x++){
+           if (counter.substring(x, x + 1).equals(".") || counter.substring(x, x + 1).equals("?") || counter.substring(x, x + 1).equals("!")){
+             sentences++;
+      }
   }
+      System.out.println("Character Count: " + counter.length());
       System.out.println("Word Count: " + words);
+      System.out.println("Sentences: " + sentences);
   }
 }
