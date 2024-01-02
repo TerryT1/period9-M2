@@ -1,23 +1,20 @@
 import java.util.Scanner;
 public class Main{
-  public static void main(String[] args){
-    int words = 1;
-    int sentences = 0;
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("Enter your sentences: ");
-    String counter = scanner.nextLine();
-      for (int i = 0; i < counter.length(); i++){
-        if (counter.substring(i, i + 1).equals(" ")){
-          words++;
-      }
-      }
-        for (int x = 0; x < counter.length(); x++){
-           if (counter.substring(x, x + 1).equals(". ") || counter.substring(x, x + 1).equals("? ") || counter.substring(x, x + 1).equals("! ")){
-             sentences++;
-      }
+    public static void main(String[] args) {
+    Quiz quiz1 = new Quiz("Name the state next to New York.", "Pennsylvania");
+    
+    int score = 0;
+    int finishedquestions = 0;
+    System.out.println("Welcome to the geography quiz. You have to answer 10 questions. You must get atleast 6 correct to pass.")");
+      while (finishedquestions < 10){
+      System.out.println(quiz1 + "Type 1 if you need a hint");
+      
+    
+    
+    
+  
+
+    quiz1.giveHint();
   }
-      System.out.println("Character Count: " + counter.length());
-      System.out.println("Word Count: " + words);
-      System.out.println("Sentences: " + sentences);
   }
-}
+      
