@@ -13,5 +13,11 @@ public class Quiz{
   
   public void giveHint(){
     System.out.println("The first character of the word is " + answer.substring(0, 1));
-}
-}
+  }
+  public void giveAnswer(){
+    System.out.println(answer);
+  }
+  
+  public void Wrong(answer){
+    answer = "wrong";
+  }
